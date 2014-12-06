@@ -1,0 +1,204 @@
+* {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	vertical-align: top;
+	font-family: Arial;
+	outline: none;
+}
+h1, h2, h3, p, li, div {
+	cursor: default;
+}
+body {
+	background-color: #eee;
+	background: #fafafa;
+}
+div.wrapper {
+	width: 900px;
+	margin: 15px auto;
+	padding: 25px 0;
+	background: url("res/back.png");
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	border-radius: 10px;
+}
+h1 {
+	margin: 0px 0 50px;
+	color: #9742E0;
+	text-align: center;
+	font-size: 4em;
+}
+div.inputs {
+	width: auto;
+	margin: auto;
+	text-align: center;
+}
+input {
+	width: 350px;
+	height: 60px;
+	color: #444;
+	font-size: 2.2em;
+	text-align: center;
+	padding: 5px;
+	background-color: #D8FB73;
+	border: 1px solid rgba(0, 0, 0, 0);
+	-webkit-transition: 0.5s all ease;
+	-moz-transition: 0.5s all ease;
+	-o-transition: 0.5s all ease;
+	transition: 0.5s all ease;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 3px;
+}
+input:focus {
+	border: 1px solid #d2b;
+}
+select {
+	margin-left: 5px;
+	width: 60px;
+	height: 60px;
+	color: #454545;
+	font-size: 1.7em;
+	background-color: #E2FC98;
+	border: none;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 3px;
+}
+div.button {
+	width: 300px;
+	height: 60px;
+	margin: 10px auto 0;
+	background-color: #BFFB10;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 8px;
+	cursor: pointer;
+	-webkit-box-shadow: 0 2px #95C800;
+	-moz-box-shadow: 0 2px #95C800;
+	box-shadow: 0 2px #95C800;
+	-webkit-transition: 0.3s all ease;
+	-moz-transition: 0.3s all ease;
+	-o-transition: 0.3s all ease;
+	transition: 0.3s all ease;
+}
+div.button:hover {
+	background-color: #C9FC36;
+}
+div.button:active {
+	margin-top: 12px;
+	margin-bottom: -2px;
+	-webkit-box-shadow: 0 2px rgba(0, 0, 0, 0);
+	-moz-box-shadow: 0 2px rgba(0, 0, 0, 0);
+	box-shadow: 0 2px rgba(0, 0, 0, 0);
+}
+div.button p {
+	display: block;
+	width: 300px;
+	position: absolute;
+	margin-top: 12px;
+	text-align: center;
+	font-size: 1.8em;
+	color: #555;
+	cursor: pointer;
+}
+div.button.add p {
+	font-size: 2em;
+}
+div.divider {
+	width: 100%;
+	height: 2px;
+	margin: 25px 0 0;
+	background-color: #bbb;
+}
+div.button.search {
+	margin-top: 20px;
+}
+div.button.search p {
+	margin-top: 14px;
+	color: #fdfdfd;
+	text-shadow: 1px 1px #bbb;
+}
+div.button.search:active {
+	margin-top: 22px;
+}
+div.button.search p select {
+	margin-top: -3px;
+	width: 75px;
+	height: 40px;
+	font-size: 1em;
+	color: #fdfdfd;
+	text-shadow: 1px 1px #bbb;
+	background-color: #D1FC55;
+}
+ul {
+	margin-top: 30px;
+	text-align: center;
+	list-style: none;
+}
+ul li {
+	position: relative;
+	margin: 8px auto 0;
+	width: 500px;
+	font-size: 1.8em;
+	color: #333;
+	padding: 7px 0;
+	-webkit-box-shadow: 1px 1px 2px #888;
+	-moz-box-shadow: 1px 1px 2px #888;
+	box-shadow: 1px 1px 2px #888;
+	background-color: rgba(50, 50, 50, 0.03);
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+	z-index: 1;
+}
+ul li span.remove {
+	display: inline-block;
+	float: right;
+	margin-right: 10px;
+	margin-top: 2.5px;
+	width: 25px;
+	height: 25px;
+	background-color: #fd5050;
+	-webkit-border-radius: 100%;
+	-moz-border-radius: 100%;
+	border-radius: 100%;
+	-webkit-transition: 0.3s all ease;
+	-moz-transition: 0.3s all ease;
+	-o-transition: 0.3s all ease;
+	transition: 0.3s all ease;
+	cursor: pointer;
+}
+span.remove:hover {
+	background-color: #fe3030;
+}
+ul>p {
+	margin: auto;
+	width: 500px;
+	height: 200px;
+	padding: 55px 30px;
+	text-align: center;
+	vertical-align: middle;
+	font-size: 2.2em;
+	color: #fafafa;
+	text-shadow: 1px 1px #777;
+	background-color: rgba(100, 100, 100, 0.4);
+	-webkit-border-radius: 20px;
+	-moz-border-radius: 20px;
+	border-radius: 20px;
+}
+footer {
+	width: 100%;
+	padding: 10px 0;
+	text-align: right;
+	font-size: 1em;
+	color: #fafafa;
+	background-color: #333;
+}
+footer p {
+	margin-right: -webkit-calc((100% - 900px) / 2);
+	margin-right: -moz-calc((100% - 900px) / 2);
+	margin-right: calc((100% - 900px) / 2);
+}
